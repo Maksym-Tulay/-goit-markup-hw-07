@@ -1,23 +1,9 @@
-@import './utils/variables';
+@import './utils/main';
 
-@import './base/common';
-@import './base/section';
-@import './base/container';
+@import './base/main';
 
-@import './components/page-header';
-@import './components/foooter';
-@import './components/logo';
-@import './components/hero';
-@import './components/advantages';
-@import './components/worklist';
-@import './components/teamlist';
-@import './components/clientlist';
+@import './components/main';
 
-@import './components/portfolio-section';
-
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
-
+@import './layout/main';
 
 
