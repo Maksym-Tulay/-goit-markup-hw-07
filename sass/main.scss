@@ -1,2 +1,23 @@
-@import "./utils/variables";
+@import './utils/variables';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/page-header';
+@import './components/foooter';
+@import './components/logo';
+@import './components/hero';
+@import './components/advantages';
+@import './components/worklist';
+@import './components/teamlist';
+@import './components/clientlist';
+
+@import './components/portfolio-section';
+
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+
 

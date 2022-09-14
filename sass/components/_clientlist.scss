@@ -1,0 +1,57 @@
+.index-clientlist-section {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: var(--body-background-color);
+}
+
+.index-clientlist-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clientlist {
+    display: flex;
+    justify-content: center;
+
+    column-gap: 30px;
+}
+
+.clientlist-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    transition: fill var(--main-transition-rule),
+        border-color var(--main-transition-rule);
+
+    border: 1px solid;
+    border-color: var(--socialmedia-icon-color);
+    border-radius: 4px;
+}
+
+.clientlist-link:hover,
+.clientlist-link:focus {
+    fill: var(--accent-blue-color);
+    border-color: var(--accent-blue-color);
+}
+
+.clientlist-icon {
+    width: 106px;
+    height: 60px;
+
+    transition: fill var(--main-transition-rule);
+
+    fill: var(--socialmedia-icon-color);
+}
+
+.clientlist-link:hover .clientlist-icon,
+.clientlist-link:focus .clientlist-icon {
+    fill: var(--accent-blue-color);
+}

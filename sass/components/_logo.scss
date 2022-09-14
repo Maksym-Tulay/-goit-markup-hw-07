@@ -1,0 +1,53 @@
+.logo-header {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 94px;
+
+    transition: color var(--main-transition-rule);
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--logo-text-color);
+    letter-spacing: 0.03em;
+
+    /* outline: 2px solid blue; */
+}
+
+.logo-span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-blue-color);
+    letter-spacing: 0.03em;
+}
+
+.logo-header:hover,
+.logo-header:focus {
+    color: var(--accent-blue-color);
+}
+
+.logo-footer {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    transition: color var(--main-transition-rule);
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--body-background-color);
+    letter-spacing: 0.03em;
+
+    /* outline: 2px solid peru; */
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+    color: var(--accent-blue-color);
+}

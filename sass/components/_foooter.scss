@@ -1,0 +1,197 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-background-color);
+
+    /* outline: 2px dashed peru; */
+}
+
+.container.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.address-container {
+    /* margin-right: 70px; */
+}
+
+/* ----------------- FOOTER LOGO ------------------- */
+
+/* ----------------- / FOOTER LOGO ------------------- */
+
+/* ----------------- ADDRESS LIST ------------------- */
+
+.address-list {
+    /* outline: 2px solid peru; */
+}
+
+.item-address,
+.item-link {
+    margin-bottom: 9px;
+}
+
+.address-list li:last-child {
+    margin-bottom: 0;
+}
+
+.address-list a:hover,
+.address-list a:focus {
+    color: var(--accent-blue-color);
+}
+
+.item-address a {
+    transition: color var(--main-transition-rule);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--body-background-color);
+    letter-spacing: 0.03em;
+}
+
+.item-link a {
+    transition: color var(--main-transition-rule);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--address-text-color);
+    letter-spacing: 0.03em;
+}
+
+/* ----------------- / ADDRESS LIST ------------------- */
+
+/* ------------- FOOTER SMLIST -------------- */
+
+.footer-smlist-descr {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--body-background-color);
+}
+
+.footer-smlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.footer-smlist-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    transition: background-color var(--main-transition-rule);
+
+    border-radius: 50%;
+    background-color: var(--footer-smlist-icon);
+}
+
+.footer-smlist-link:hover,
+.footer-smlist-link:focus {
+    background-color: var(--accent-blue-color);
+}
+
+.footer-smlist-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--body-background-color);
+}
+
+/* ----------------- / FOOTER SMLIST ------------------- */
+
+/*------------- FOOTER FORM -------------*/
+
+.footer-form-container {
+    width: 570px;
+}
+
+.footer-form-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--body-background-color);
+}
+
+.footer-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form-label input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+
+    border: 1px solid var(--footer-input-border-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    transition: border var(--main-transition-rule);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--body-background-color);
+}
+
+.footer-form-label input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--address-text-color);
+}
+
+.footer-form-label input:focus {
+    border: 1px solid var(--accent-blue-color);
+}
+
+.footer-form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+
+    background-color: var(--accent-blue-color);
+    box-shadow: 0px 4px 4px var(--form-submit-button-shadow-color);
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--body-background-color);
+    cursor: pointer;
+}
+
+.send-icon {
+    fill: var(--body-background-color);
+}
