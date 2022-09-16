@@ -17,10 +17,9 @@
     background-position: center;
     background-size: cover;
 
-    /* outline: 2px dashed red; */
 }
 
-.index-hero-title {
+.index-hero__title {
     width: 696px;
     margin: 0 auto 30px auto;
 
@@ -32,10 +31,10 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
 
-    /* outline: 2px solid red; */
+
 }
 
-.hero-button {
+.index-hero__button {
     width: 216px;
     height: 50px;
 
@@ -51,9 +50,8 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
 
-    /* outline: 2px solid red; */
-}
+    &:focus {
+         background-color: var(--accent-blue-color);
+    }
 
-.hero-button:focus {
-    background-color: var(--accent-blue-color);
 }

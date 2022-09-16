@@ -1,7 +1,5 @@
 .page-footer {
     background-color: var(--footer-background-color);
-
-    /* outline: 2px dashed peru; */
 }
 
 .page-footer__container {
@@ -13,15 +11,6 @@
     padding-bottom: 60px;
 }
  
-
-
-/* ----------------- FOOTER LOGO ------------------- */
-
-/* ----------------- / FOOTER LOGO ------------------- */
-
-/* ----------------- ADDRESS LIST ------------------- */
-
-
 .address-list__item {
     margin-bottom: 9px;
     &:last-child {
@@ -55,10 +44,6 @@
     color: var(--address-text-color);
     letter-spacing: 0.03em;
 }
-
-/* ----------------- / ADDRESS LIST ------------------- */
-
-/* ------------- FOOTER SMLIST -------------- */
 
 .footer-smlist {
     list-style: none;
@@ -102,9 +87,6 @@
 
     fill: var(--body-background-color);
 }
-
-/* -------------/ FOOTER SMLIST -------------- */
-
 
 .footer-form {
     display: flex;

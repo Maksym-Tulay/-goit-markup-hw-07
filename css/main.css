@@ -218,7 +218,6 @@ textarea {
 
 .page-footer {
   background-color: var(--footer-background-color);
-  /* outline: 2px dashed peru; */
 }
 
 .page-footer__container {
@@ -229,9 +228,6 @@ textarea {
   padding-bottom: 60px;
 }
 
-/* ----------------- FOOTER LOGO ------------------- */
-/* ----------------- / FOOTER LOGO ------------------- */
-/* ----------------- ADDRESS LIST ------------------- */
 .address-list__item {
   margin-bottom: 9px;
 }
@@ -264,8 +260,6 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-/* ----------------- / ADDRESS LIST ------------------- */
-/* ------------- FOOTER SMLIST -------------- */
 .footer-smlist {
   list-style: none;
   display: flex;
@@ -303,7 +297,6 @@ textarea {
   fill: var(--body-background-color);
 }
 
-/* -------------/ FOOTER SMLIST -------------- */
 .footer-form {
   display: flex;
 }
@@ -379,10 +372,9 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* outline: 2px dashed red; */
 }
 
-.index-hero-title {
+.index-hero__title {
   width: 696px;
   margin: 0 auto 30px auto;
   color: var(--body-background-color);
@@ -392,10 +384,9 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  /* outline: 2px solid red; */
 }
 
-.hero-button {
+.index-hero__button {
   width: 216px;
   height: 50px;
   transition: background-color var(--main-transition-rule);
@@ -408,10 +399,8 @@ textarea {
   color: var(--body-background-color);
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* outline: 2px solid red; */
 }
-
-.hero-button:focus {
+.index-hero__button:focus {
   background-color: var(--accent-blue-color);
 }
 
