@@ -6,13 +6,13 @@
     /* outline: 2px dashed blue; */
 }
 
-.page-header-container {
+.page-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav {
+.page-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,50 +20,60 @@
     /* outline: 2px solid blue; */
 }
 
-.main-nav {
+.header__menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     gap: 50px;
     /* outline: 2px solid blue; */
 }
 
-.main-nav a {
+.menu__item {
+    position: relative;
+}
+
+.menu__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
     transition: color var(--main-transition-rule);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: inherit;
+    color: var(--body-text-color);
     letter-spacing: 0.02em;
-}
 
-.current-item a {
+   .menu__item &:hover,
+   .menu__item &:focus{
     color: var(--accent-blue-color);
 }
+.menu__item_current &{
+    color: var(--accent-blue-color);
+}
+}           
 
-.current-item::after {
-    display: block;
-    width: 100%;
-    height: 4px;
-    content: "";
-    background-color: var(--accent-blue-color);
-
-    border-radius: 2px;
+.menu__item_current::after {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        content: "";
+        background-color: var(--accent-blue-color);
+    
+        border-radius: 2px;
+        }
 }
 
-.contact-nav {
+.contact-list {
     display: flex;
     column-gap: 50px;
 
     /* outline: 2px solid blue; */
 }
 
-.contact-link {
+.contact-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,17 +88,13 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--list-text-color);
+
+    .contact-list__item &:hover,
+    .contact-list__item &:focus {
+            color: var(--accent-blue-color);
+        }
 }
 
-.contact-icon {
+.contact-list__icon {
     fill: currentColor;
-}
-
-/* hover and focus */
-
-.main-nav .item:hover,
-.contact-nav .contact-link:hover,
-.main-nav .item:focus,
-.contact-nav .contact-link:focus {
-    color: var(--accent-blue-color);
 }

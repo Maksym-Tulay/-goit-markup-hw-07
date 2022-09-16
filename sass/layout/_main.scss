@@ -1,13 +1,13 @@
-@import './components/page-header';
-@import './components/foooter';
-@import './components/hero';
-@import './components/advantages';
-@import './components/worklist';
-@import './components/teamlist';
-@import './components/clientlist';
+@import './page-header';
+@import './page-footer';
+@import './hero-section';
+@import './advantages-section';
+@import './worklist-section';
+@import './teamlist-section';
+@import './clientlist-section';
 
-@import './components/portfolio-section';
+@import './portfolio-section';
 
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
+@import './backdrop';
+@import './modal-window';
+@import './modal-form';

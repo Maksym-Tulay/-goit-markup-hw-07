@@ -1,4 +1,4 @@
-.logo-header {
+.header__logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -16,7 +16,7 @@
     /* outline: 2px solid blue; */
 }
 
-.logo-span {
+.logo__span {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -25,12 +25,12 @@
     letter-spacing: 0.03em;
 }
 
-.logo-header:hover,
-.logo-header:focus {
+.header__logo:hover,
+.header__logo:focus {
     color: var(--accent-blue-color);
 }
 
-.logo-footer {
+.footer__logo {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -47,7 +47,7 @@
     /* outline: 2px solid peru; */
 }
 
-.logo-footer:hover,
-.logo-footer:focus {
+.footer__logo:hover,
+.footer__logo:focus {
     color: var(--accent-blue-color);
 }
