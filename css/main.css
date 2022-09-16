@@ -488,20 +488,20 @@ textarea {
   transition: color var(--main-transition-rule);
 }
 
-.worklist {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.worklist__title {
+.worklist-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.worklist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .worklist__link {
@@ -540,7 +540,7 @@ textarea {
   display: block;
 }
 
-.index-teamlist-section {
+.teamlist-section {
   background-color: var(--grey-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -548,27 +548,7 @@ textarea {
   /* outline: 2px dashed orchid; */
 }
 
-.index-teamlist {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.index-teamlist-item {
-  background-color: var(--body-background-color);
-  width: 270px;
-  margin-right: 30px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  /* outline: 2px solid orchid; */
-}
-
-.index-teamlist-item:last-child {
-  margin-right: 0;
-}
-
-.index-teamlist-title {
+.teamlist-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -577,13 +557,31 @@ textarea {
   margin-bottom: 50px;
 }
 
-.item-container {
+.teamlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.teamlist__item {
+  background-color: var(--body-background-color);
+  width: 270px;
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.teamlist__item:last-child {
+  margin-right: 0;
+}
+
+.employee {
   margin-top: 0px;
   padding: 30px 0;
   background-color: var(--body-background-color);
 }
 
-.empolyees-name {
+.employee__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -591,7 +589,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.employees-position {
+.employee__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -600,14 +598,14 @@ textarea {
   margin-bottom: 16px;
 }
 
-.sm-list {
+.smlist {
   list-style: none;
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
-.smlist-link {
+.smlist__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -617,32 +615,28 @@ textarea {
   border-radius: 50%;
   background-color: var(--body-background-color);
 }
-
-.smlist-link:hover,
-.smlist-link:focus {
+.smlist__link:hover, .smlist__link:focus {
   background-color: var(--accent-blue-color);
 }
 
-.smlist-icon {
+.smlist__icon {
   width: 20px;
   height: 20px;
   transition: fill var(--main-transition-rule);
   fill: var(--socialmedia-icon-color);
 }
-
-.smlist-link:hover .smlist-icon,
-.smlist-link:focus .smlist-icon {
+.smlist__link:hover .smlist__icon, .smlist__link:focus .smlist__icon {
   fill: var(--body-background-color);
 }
 
-.index-clientlist-section {
+.clientlist-section {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--body-background-color);
 }
 
-.index-clientlist-title {
+.clientlist__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -656,7 +650,7 @@ textarea {
   column-gap: 30px;
 }
 
-.clientlist-link {
+.clientlist__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -667,22 +661,18 @@ textarea {
   border-color: var(--socialmedia-icon-color);
   border-radius: 4px;
 }
-
-.clientlist-link:hover,
-.clientlist-link:focus {
+.clientlist__link:hover, .clientlist__link:focus {
   fill: var(--accent-blue-color);
   border-color: var(--accent-blue-color);
 }
 
-.clientlist-icon {
+.clientlist__icon {
   width: 106px;
   height: 60px;
   transition: fill var(--main-transition-rule);
   fill: var(--socialmedia-icon-color);
 }
-
-.clientlist-link:hover .clientlist-icon,
-.clientlist-link:focus .clientlist-icon {
+.clientlist__link:focus .clientlist__icon, .clientlist__link:hover .clientlist__icon {
   fill: var(--accent-blue-color);
 }
 
