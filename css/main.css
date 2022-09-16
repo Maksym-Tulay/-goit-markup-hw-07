@@ -481,31 +481,21 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.index-work-section {
+.worklist-section {
   margin: top 0;
   padding-top: 94px;
   padding-bottom: 94px;
   transition: color var(--main-transition-rule);
-  /* outline: 2px dashed tomato; */
 }
 
-.index-work-section a:hover,
-.index-work-section a:focus {
-  color: var(--accent-blue-color);
-}
-
-.index-worklist {
+.worklist {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.index-worklist img {
-  display: block;
-}
-
-.worklist-title {
+.worklist__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -514,16 +504,14 @@ textarea {
   margin-bottom: 50px;
 }
 
-.worklist-item-link {
+.worklist__link {
   position: relative;
 }
-
-.worklist-item-link:hover .item-link-text,
-.worklist-item-link:focus .item-link-text {
-  opacity: 1;
+.worklist__link:hover, .worklist__link:focus {
+  color: var(--accent-blue-color);
 }
 
-.worklist-item-link .item-link-text {
+.worklist__descr {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -543,6 +531,13 @@ textarea {
   text-transform: uppercase;
   color: var(--body-background-color);
   background-color: var(--item-overlay-backgroundcolor);
+}
+.worklist__link:hover .worklist__descr, .worklist__link:focus .worklist__descr {
+  opacity: 1;
+}
+
+.worklist__image {
+  display: block;
 }
 
 .index-teamlist-section {
