@@ -411,7 +411,7 @@ textarea {
 }
 
 /*  hidden h1 + h2 titles on main and portfolio pages */
-.advantages-section__hidden-title {
+.hidden-title {
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -683,8 +683,7 @@ textarea {
   /* outline: 2px dashed seagreen; */
 }
 
-/* gallery navigation */
-.gallery-nav {
+.gallery-navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -693,11 +692,11 @@ textarea {
   /* outline: 2px dashed peru; */
 }
 
-.gallery-nav-item:nth-child(n+2) {
+.gallery-navigation__item:nth-child(n+2) {
   margin-left: 8px;
 }
 
-.gallery-nav button {
+.gallery-navigation__button {
   height: 38px;
   cursor: pointer;
   transition: background-color var(--main-transition-rule), color var(--main-transition-rule), box-shadow var(--main-transition-rule);
@@ -711,15 +710,12 @@ textarea {
   letter-spacing: 0.03em;
   padding: 6px 22px;
 }
-
-.gallery-nav button:focus,
-.gallery-nav button:hover {
+.gallery-navigation__button:focus, .gallery-navigation__button:hover {
   background-color: var(--accent-blue-color);
   color: var(--body-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* gallery */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -728,40 +724,35 @@ textarea {
   /* outline: 2px dashed seagreen; */
 }
 
-.gallery-item {
+.gallery__item {
   width: 370px;
   /* outline: 2px solid seagreen; */
 }
-
-.gallery-item:nth-child(n+6) {
+.gallery__item:nth-child(n+6) {
   margin-bottom: 0px;
 }
-
-.gallery-item:nth-child(3n) {
+.gallery__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.gallery-item-box {
+.gallery__item-box {
   display: block;
   transition: box-sizing var(--main-transition-rule), box-shadow var(--main-transition-rule);
 }
-
-.gallery-item-box:hover,
-.gallery-item-box:focus {
+.gallery__item-box:hover, .gallery__item-box:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery-item .imagebox {
+.imagebox {
   position: relative;
   overflow: hidden;
 }
-
-.gallery-item-box:hover .imagebox-text-overlay {
+.imagebox:hover .imagebox__text {
   transform: translatey(0);
 }
 
-.imagebox-text-overlay {
+.imagebox__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -787,7 +778,7 @@ textarea {
   border-color: var(--portfolio-item-border-color);
 }
 
-.gallery-item-header {
+.descr-container__header {
   margin-bottom: 4px;
   color: var(--body-text-color);
   font-weight: 700;
@@ -796,7 +787,7 @@ textarea {
   letter-spacing: 0.06em;
 }
 
-.gallery-item-text {
+.descr-container__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
