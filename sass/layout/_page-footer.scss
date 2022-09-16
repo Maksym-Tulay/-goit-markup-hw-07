@@ -1,27 +1,19 @@
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+.page-footer {
     background-color: var(--footer-background-color);
 
     /* outline: 2px dashed peru; */
 }
 
-.container.footer-container {
+.page-footer__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+ 
 
-.address-container {
-    /* margin-right: 70px; */
-}
 
 /* ----------------- FOOTER LOGO ------------------- */
 
@@ -29,25 +21,20 @@
 
 /* ----------------- ADDRESS LIST ------------------- */
 
-.address-list {
-    /* outline: 2px solid peru; */
-}
 
-.item-address,
-.item-link {
+.address-list__item {
     margin-bottom: 9px;
+    &:last-child {
+            margin-bottom: 0;
+        }
 }
 
-.address-list li:last-child {
-    margin-bottom: 0;
-}
-
-.address-list a:hover,
-.address-list a:focus {
+.address-list__link:hover,
+.address-list__link:focus {
     color: var(--accent-blue-color);
 }
 
-.item-address a {
+.address-list__link_address {
     transition: color var(--main-transition-rule);
 
     font-style: normal;
@@ -58,7 +45,7 @@
     letter-spacing: 0.03em;
 }
 
-.item-link a {
+.address-list__link_contact {
     transition: color var(--main-transition-rule);
 
     font-style: normal;
@@ -73,7 +60,14 @@
 
 /* ------------- FOOTER SMLIST -------------- */
 
-.footer-smlist-descr {
+.footer-smlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.footer-smlist__call {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -84,14 +78,7 @@
     color: var(--body-background-color);
 }
 
-.footer-smlist {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-}
-
-.footer-smlist-link {
+.footer-smlist__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,30 +88,29 @@
     transition: background-color var(--main-transition-rule);
 
     border-radius: 50%;
-    background-color: var(--footer-smlist-icon);
+    background-color: var(--footer-smlist-icon-color);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-blue-color);
+        }
 }
 
-.footer-smlist-link:hover,
-.footer-smlist-link:focus {
-    background-color: var(--accent-blue-color);
-}
-
-.footer-smlist-icon {
+.footer-smlist__icon {
     width: 20px;
     height: 20px;
 
     fill: var(--body-background-color);
 }
 
-/* ----------------- / FOOTER SMLIST ------------------- */
+/* -------------/ FOOTER SMLIST -------------- */
 
-/*------------- FOOTER FORM -------------*/
 
-.footer-form-container {
-    width: 570px;
+.footer-form {
+    display: flex;
 }
 
-.footer-form-title {
+.footer-form__call {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -135,15 +121,11 @@
     color: var(--body-background-color);
 }
 
-.footer-form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-form-label input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+    margin-right: 12px;
 
     border: 1px solid var(--footer-input-border-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -157,21 +139,17 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--body-background-color);
+
+    &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: var(--address-text-color);
+        }
 }
 
-.footer-form-label input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: var(--address-text-color);
-}
-
-.footer-form-label input:focus {
-    border: 1px solid var(--accent-blue-color);
-}
-
-.footer-form-button {
+.footer-form__button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,6 +170,6 @@
     cursor: pointer;
 }
 
-.send-icon {
+.footer-form__button_icon {
     fill: var(--body-background-color);
 }

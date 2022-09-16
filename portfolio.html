@@ -312,19 +312,20 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="address-container">
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div>
           <!--Footer Logo-->
-          <a href="./index.html" class="logo-footer">
-            <span class="logo-span">Web</span>Studio
+          <a href="./index.html" class="logo footer__logo">
+            <span class="logo__span">Web</span>Studio
           </a>
 
           <!--Adress-->
-          <address class="address">
+          <address>
             <ul class="address-list">
-              <li class="address-list item-address">
+              <li class="address-list__item">
                 <a
+                  class="address-list__link address-list__link_address"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -332,57 +333,74 @@
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="address-list item-link">
-                <a href="mailto:info@example.com">info@example.com </a>
+              <li class="address-list__item">
+                <a
+                  class="address-list__link address-list__link_contact"
+                  href="mailto:info@example.com"
+                  >info@example.com
+                </a>
               </li>
-              <li class="address-list item-link">
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="address-list__item">
+                <a
+                  class="address-list__link address-list__link_contact"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-smlist-container">
-          <p class="footer-smlist-descr">Приєднуйтесь</p>
+        <div>
+          <p class="footer-smlist__call">Приєднуйтесь</p>
           <ul class="footer-smlist">
             <li>
-              <a href="https://www.instagram.com/" class="footer-smlist-link">
+              <a href="https://www.instagram.com/" class="footer-smlist__link">
                 <svg
                   lang="en"
                   aria-label="instagram"
-                  class="footer-smlist-icon"
+                  class="footer-smlist__icon"
                 >
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com/" class="footer-smlist-link">
-                <svg lang="en" aria-label="twitter" class="footer-smlist-icon">
+              <a href="https://www.twitter.com/" class="footer-smlist__link">
+                <svg lang="en" aria-label="twitter" class="footer-smlist__icon">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com" class="footer-smlist-link">
-                <svg lang="en" aria-label="facebook" class="footer-smlist-icon">
+              <a href="https://www.facebook.com" class="footer-smlist__link">
+                <svg
+                  lang="en"
+                  aria-label="facebook"
+                  class="footer-smlist__icon"
+                >
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/" class="footer-smlist-link">
-                <svg lang="en" aria-label="linkedin" class="footer-smlist-icon">
+              <a href="https://www.linkedin.com/" class="footer-smlist__link">
+                <svg
+                  lang="en"
+                  aria-label="linkedin"
+                  class="footer-smlist__icon"
+                >
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
-          <p class="footer-form-title">Підпишіться на розсилку</p>
+        <div>
+          <p class="footer-form__call">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <label class="footer-form-label">
+            <label class="footer-form__label">
               <input
+                class="footer-form__input"
                 type="email"
                 name="user_email"
                 autocomplete="email"
@@ -390,9 +408,13 @@
                 required
               />
             </label>
-            <button type="submit" class="footer-form-button">
+            <button type="submit" class="button footer-form__button">
               Підписатися
-              <svg class="send-icon" width="24" height="24">
+              <svg
+                class="button__icon footer-form__button_icon"
+                width="24"
+                height="24"
+              >
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
