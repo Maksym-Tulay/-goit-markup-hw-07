@@ -14,7 +14,7 @@
     background-color: var(--body-background-color);
 }
 
-.modal-close-button {
+.modal-window__close-button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -31,16 +31,16 @@
     cursor: pointer;
 }
 
-.icon-close {
+.modal-window__icon{
     width: 18px;
     height: 18px;
 
     transition: fill var(--main-transition-rule);
 
     fill: var(--body-text-color);
-}
 
-.modal-close-button:hover .icon-close,
-.modal-close-button:focus .icon-close {
-    fill: var(--accent-blue-color);
+    .modal-window__close-button:hover &,
+    .modal-window__close-button:focus & {
+        fill: var(--accent-blue-color);
+    }
 }
