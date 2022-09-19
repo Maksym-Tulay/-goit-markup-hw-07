@@ -740,11 +740,11 @@ textarea {
   margin-right: 0;
 }
 
-.gallery__item-box {
+.gallery__link {
   display: block;
   transition: box-sizing var(--main-transition-rule), box-shadow var(--main-transition-rule);
 }
-.gallery__item-box:hover, .gallery__item-box:focus {
+.gallery__link:hover, .gallery__link:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -752,9 +752,6 @@ textarea {
 .imagebox {
   position: relative;
   overflow: hidden;
-}
-.imagebox:hover .imagebox__text {
-  transform: translatey(0);
 }
 
 .imagebox__text {
@@ -772,6 +769,9 @@ textarea {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--body-background-color);
+}
+.gallery__link:hover .imagebox__text, .gallery__link:focus .imagebox__text {
+  transform: translatey(0);
 }
 
 .descr-container {
