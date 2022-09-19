@@ -39,11 +39,7 @@
     padding-bottom: 32px;
     transition: color var(--main-transition-rule);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--body-text-color);
-    letter-spacing: 0.02em;
+    @include font (500, 14px, 1.14, 00.02em, var(--body-text-color));
 
    .menu__item &:hover,
    .menu__item &:focus{
@@ -82,11 +78,7 @@
 
     transition: color var(--main-transition-rule);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--list-text-color);
+    @include font (500, 14px, 1.14, 00.02em, var(--list-text-color));
 
     .contact-list__item &:hover,
     .contact-list__item &:focus {

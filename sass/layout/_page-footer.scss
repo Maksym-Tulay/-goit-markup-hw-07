@@ -27,22 +27,14 @@
     transition: color var(--main-transition-rule);
 
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    color: var(--body-background-color);
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.5, 00.03em, var(--body-background-color));
 }
 
 .address-list__link_contact {
     transition: color var(--main-transition-rule);
 
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--address-text-color);
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.71, 00.03em, var(--address-text-color));
 }
 
 .footer-smlist {
@@ -55,12 +47,8 @@
 .footer-smlist__call {
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
+    @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
     text-transform: uppercase;
-    color: var(--body-background-color);
 }
 
 .footer-smlist__link {
@@ -95,12 +83,8 @@
 .footer-form__call {
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font (700, 14px, 1.33, 00.03em, var(--body-background-color));
     text-transform: uppercase;
-    color: var(--body-background-color);
 }
 
 .footer-form__input {
@@ -116,11 +100,7 @@
 
     transition: border var(--main-transition-rule);
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: var(--body-background-color);
+    @include font (400, 16px, 1.25, 00.03em, var(--body-background-color));
 
     &::placeholder {
             font-weight: 400;
@@ -144,11 +124,7 @@
     border: none;
     border-radius: 4px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--body-background-color);
+    @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
     cursor: pointer;
 }
 

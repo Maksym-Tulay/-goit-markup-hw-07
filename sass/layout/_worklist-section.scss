@@ -7,12 +7,10 @@
 }
 
 .worklist-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
+
+    @include font (700, 36px, 1.17, 00.03em, var(--body-text-color));
+    text-align: center;
 }
 
 .worklist {
@@ -46,13 +44,9 @@
     opacity: 0;
     transition: opacity var(--main-transition-rule);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @include font (700, 14px, 1.14, 00.03em, var(--body-background-color));
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--body-background-color);
     background-color: var(--item-overlay-backgroundcolor);
 
         .worklist__link:hover &,

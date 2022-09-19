@@ -23,6 +23,10 @@
   --main-transition-rule: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__logo, .logo__span, .header__logo {
+  font-family: "Raleway", sans-serif;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -86,22 +90,20 @@ textarea {
   padding-bottom: 25px;
   margin-right: 94px;
   transition: color var(--main-transition-rule);
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--logo-text-color);
   letter-spacing: 0.03em;
+  color: var(--logo-text-color);
   /* outline: 2px solid blue; */
 }
 
 .logo__span {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-blue-color);
   letter-spacing: 0.03em;
+  color: var(--accent-blue-color);
 }
 
 .header__logo:hover,
@@ -114,13 +116,11 @@ textarea {
   margin-top: 0;
   margin-bottom: 20px;
   transition: color var(--main-transition-rule);
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--body-background-color);
   letter-spacing: 0.03em;
-  /* outline: 2px solid peru; */
+  color: var(--body-background-color);
 }
 
 .footer__logo:hover,
@@ -168,8 +168,8 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--body-text-color);
   letter-spacing: 0.02em;
+  color: var(--body-text-color);
 }
 .menu__item .menu__link:hover, .menu__item .menu__link:focus {
   color: var(--accent-blue-color);
@@ -246,8 +246,8 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--body-background-color);
   letter-spacing: 0.03em;
+  color: var(--body-background-color);
 }
 
 .address-list__link_contact {
@@ -256,8 +256,8 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--address-text-color);
   letter-spacing: 0.03em;
+  color: var(--address-text-color);
 }
 
 .footer-smlist {
@@ -273,8 +273,8 @@ textarea {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--body-background-color);
+  text-transform: uppercase;
 }
 
 .footer-smlist__link {
@@ -305,10 +305,10 @@ textarea {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--body-background-color);
+  text-transform: uppercase;
 }
 
 .footer-form__input {
@@ -377,13 +377,13 @@ textarea {
 .index-hero__title {
   width: 696px;
   margin: 0 auto 30px auto;
-  color: var(--body-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--body-background-color);
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
 }
 
 .index-hero__button {
@@ -396,9 +396,9 @@ textarea {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  color: var(--body-background-color);
   line-height: 1.88;
   letter-spacing: 0.06em;
+  color: var(--body-background-color);
 }
 .index-hero__button:focus {
   background-color: var(--accent-blue-color);
@@ -468,8 +468,9 @@ textarea {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  color: var(--body-text-color);
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -477,8 +478,8 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--list-text-color);
   letter-spacing: 0.03em;
+  color: var(--list-text-color);
 }
 
 .worklist-section {
@@ -489,12 +490,13 @@ textarea {
 }
 
 .worklist-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  color: var(--body-text-color);
+  text-align: center;
 }
 
 .worklist {
@@ -525,11 +527,11 @@ textarea {
   transition: opacity var(--main-transition-rule);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--body-background-color);
+  text-align: center;
+  text-transform: uppercase;
   background-color: var(--item-overlay-backgroundcolor);
 }
 .worklist__link:hover .worklist__descr, .worklist__link:focus .worklist__descr {
@@ -582,20 +584,21 @@ textarea {
 }
 
 .employee__name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  color: var(--body-text-color);
 }
 
 .employee__position {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--list-text-color);
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  color: var(--list-text-color);
 }
 
 .smlist {
@@ -637,11 +640,12 @@ textarea {
 }
 
 .clientlist__title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  color: var(--body-text-color);
 }
 
 .clientlist {
@@ -698,6 +702,7 @@ textarea {
 
 .gallery-navigation__button {
   height: 38px;
+  padding: 6px 22px;
   cursor: pointer;
   transition: background-color var(--main-transition-rule), color var(--main-transition-rule), box-shadow var(--main-transition-rule);
   background-color: var(--grey-background-color);
@@ -706,9 +711,9 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
-  padding: 6px 22px;
+  color: var(--body-text-color);
+  text-align: center;
 }
 .gallery-navigation__button:focus, .gallery-navigation__button:hover {
   background-color: var(--accent-blue-color);
@@ -780,19 +785,19 @@ textarea {
 
 .descr-container__header {
   margin-bottom: 4px;
-  color: var(--body-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--body-text-color);
 }
 
 .descr-container__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--list-text-color);
   letter-spacing: 0.03em;
+  color: var(--list-text-color);
 }
 
 .backdrop {
@@ -859,9 +864,9 @@ textarea {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--body-text-color);
+  text-align: center;
 }
 
 .modal-form__field {

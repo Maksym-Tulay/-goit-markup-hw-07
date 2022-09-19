@@ -23,15 +23,9 @@
     width: 696px;
     margin: 0 auto 30px auto;
 
-    color: var(--body-background-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font (900, 44px, 1.36, 00.06em, var(--body-background-color));
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-
-
 }
 
 .index-hero__button {
@@ -44,14 +38,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--body-background-color);
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include font (700, 16px, 1.88, 00.06em, var(--body-background-color));
 
     &:focus {
          background-color: var(--accent-blue-color);
     }
-
 }

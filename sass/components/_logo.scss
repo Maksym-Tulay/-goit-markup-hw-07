@@ -6,23 +6,15 @@
 
     transition: color var(--main-transition-rule);
 
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--logo-text-color);
-    letter-spacing: 0.03em;
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--logo-text-color));
 
     /* outline: 2px solid blue; */
 }
 
 .logo__span {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--accent-blue-color);
-    letter-spacing: 0.03em;
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--accent-blue-color));
 }
 
 .header__logo:hover,
@@ -37,14 +29,8 @@
 
     transition: color var(--main-transition-rule);
 
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--body-background-color);
-    letter-spacing: 0.03em;
-
-    /* outline: 2px solid peru; */
+    @extend %logo-font;
+    @include font (700, 26px, 1.19, 00.03em, var(--body-background-color));
 }
 
 .footer__logo:hover,

@@ -63,18 +63,11 @@
 }
 
 .advantages-list__item-header {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font (700, 14px, 1.14, 00.03em, var(--body-text-color));
     text-transform: uppercase;
-    letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
 
 .advantages-list__item-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--list-text-color);
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 1.71, 00.03em, var(--list-text-color));
 }
