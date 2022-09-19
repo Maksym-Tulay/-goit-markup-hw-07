@@ -53,18 +53,15 @@
     justify-content: space-between;
     gap: 30px;
 
-    /* outline: 2px dashed seagreen; */
 }
 
 
 .gallery__item {
     width: 370px;
 
-    /* outline: 2px solid seagreen; */
     &:nth-child(n + 6) {
         margin-bottom: 0px;
     }
-    
     &:nth-child(3n) {
         margin-right: 0;
     }
@@ -106,7 +103,6 @@
     .gallery__link:hover &,
     .gallery__link:focus & {
         transform: translatey(0);
-
     }
 
 }
